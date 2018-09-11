@@ -1,0 +1,33 @@
+footer {
+  position: relative;
+  top: 5em;
+  color: $offWhite;
+}
+
+.footer {
+  background-color: $transparent;
+  text-align: center;
+  padding: 0;
+  margin: 1rem 0;
+  min-width: 20%;
+  max-width: 100%;
+}
+
+.fab {
+  margin: 0 10px;
+  padding: 0;
+  transition: 0.3s;
+  color: $lightBlue;
+  &:hover {
+    color: $lightGreen;
+    transform: scale(1.25, 1.75);
+    transition: 0.3s;
+  }
+}
+
+#copyright {
+  color: $lightBlue;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}

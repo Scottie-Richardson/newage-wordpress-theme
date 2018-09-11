@@ -1,0 +1,44 @@
+/* Customize Login Screen */
+body.login .button-primary {
+  background-color: $midBlue;
+  border-color: color($midBlue b(+10%));
+  text-shadow: 0 -1px 1px color($midBlue b(+15%)),
+    1px 0 1px color($midBlue b(+15%)), 0 1px 1px color($midBlue b(+15%)),
+    -1px 0 1px color($midBlue b(+15%));
+  box-shadow: 0 1px 0 color($midBlue b(+20%));
+}
+
+body.login .button-primary:hover,
+body.login .button-primary:active,
+body.login .button-primary:focus {
+  background-color: color($midBlue b(+7%));
+  border-color: color($midBlue b(+15%));
+  text-shadow: 0 -1px 1px color($midBlue b(+20%)),
+    1px 0 1px color($midBlue b(+20%)), 0 1px 1px color($midBlue b(+20%)),
+    -1px 0 1px color($midBlue b(+20%));
+  box-shadow: 0 1px 0 color($midBlue b(+25%));
+}
+
+body.login {
+  background-color: $black;
+}
+
+.login h1 a {
+  color: $lightBlue;
+  font-weight: 300;
+  background-image: none;
+  width: auto;
+  height: auto;
+  text-indent: 0;
+  &:hover {
+    color: $darkBlue;
+  }
+}
+
+.login #backtoblog a,
+.login #nav a {
+  color: $lightBlue;
+  &:hover {
+    color: $darkBlue;
+  }
+}

@@ -1,0 +1,382 @@
+@import "colors";
+
+$html-confidence:         95;
+$css-confidence:          85;
+$javascript-confidence:   80;
+$node-confidence:         80;
+$express-confidence:      75;
+$react-confidence:        60;
+$angular-confidence:      60;
+$php-confidence:          90;
+$wordpress-confidence:    85;
+$sql-confidence:          80;
+$nonsql-confidence:       70;
+$ruby-confidence:         60;
+$c-confidence:            80;
+$c-sharp-confidence:      60;
+$c-plus-plus-confidence:  90;
+$java-confidence:         90;
+$android-confidence:      60;
+$ios-confidence:          60;
+$unity-confidence:        60;
+$unrealengine-confidence: 60;
+$git-confidence:          90;
+$github-confidence:       90;
+$gitlab-confidence:       90;
+$r-confidence:            85;
+$python-confidence:       75;
+$flask-confidence:        60;
+
+.table-container {
+  position: relative;
+  top: 3em;
+  width: 95%;
+  padding: 0;
+  margin: 1em auto;
+}
+
+#table-title {
+  text-align: center;
+  color: $lightBlue;
+  padding: 0;
+  margin-bottom: 0.25em;
+  border-bottom: $lightGreen 3px solid;
+}
+
+.tech-element {
+  font-weight: normal;
+  margin-left: 10rem;
+  height: 2rem;
+  padding: 5px;
+  position: relative;
+  bottom: 0px;
+  transition: 0.3s ease-in;
+  overflow: hidden;
+  &:after {
+    position: absolute;
+    top: 0.5em;
+    left: 101%;
+  }
+  &:hover{
+    font-weight: bold;
+    height: 4em;
+    padding: 10px;
+    cursor: pointer;
+
+    p {
+      color: $midGreen;
+      transition: .5s ease-in-out;
+    }
+
+    .html {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$html-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $html-confidence + "%";
+      }
+    }
+
+    .css {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$css-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $css-confidence + "%";
+      }
+    }
+    .javascript {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$javascript-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $javascript-confidence + "%";
+      }
+    }
+    .node {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$node-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $node-confidence + "%";
+      }
+    }
+    .express {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$express-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $express-confidence + "%";
+      }
+    }
+    .react {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$react-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $react-confidence + "%";
+      }
+    }
+    .angular {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$angular-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $angular-confidence + "%";
+      }
+    }
+    .php {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$php-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $php-confidence + "%";
+      }
+    }
+    .wordpress {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$wordpress-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $wordpress-confidence + "%";
+      }
+    }
+    .sql {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$sql-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $sql-confidence + "%";
+      }
+    }
+    .nonsql {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$nonsql-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $nonsql-confidence + "%";
+      }
+    }
+    .ruby {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$ruby-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $ruby-confidence + "%";
+      }
+    }
+    .c {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$c-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $c-confidence + "%";
+      }
+    }
+    .c-sharp {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$c-sharp-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $c-sharp-confidence + "%";
+      }
+    }
+    .c-plus-plus {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$c-plus-plus-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $c-plus-plus-confidence + "%";
+      }
+    }
+    .java {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$java-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $java-confidence + "%";
+      }
+    }
+    .android {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$android-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $android-confidence + "%";
+      }
+    }
+    .ios {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$ios-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $ios-confidence + "%";
+      }
+    }
+    .unity {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$unity-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $unity-confidence + "%";
+      }
+    }
+    .unrealengine {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$unrealengine-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $unrealengine-confidence + "%";
+      }
+    }
+    .git {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$git-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $git-confidence + "%";
+      }
+    }
+    .github {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$github-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $github-confidence + "%";
+      }
+    }
+    .gitlab {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$gitlab-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $gitlab-confidence + "%";
+      }
+    }
+    .python {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$python-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $python-confidence + "%";
+      }
+    }
+    .r {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$r-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $r-confidence + "%";
+      }
+    }
+    .flask {
+      padding: 0.25em 0 0 1em;
+      transition: width 1s ease-in-out;
+      width: #{$flask-confidence - 10}vw;
+      &:after {
+        margin-left: 10%;
+        color: $black;
+        font-size: 1.75rem;
+        content: $flask-confidence + "%";
+      }
+    }
+  }
+}
+
+.bar {
+  clear: right;
+  height: 100%;
+  width: 0%;
+  color: $black;
+  background-color: $midGreen;
+  text-align: left;
+}
+
+@media (min-width: 786px) {
+  .tech-element {
+    //height: 2em;
+    &:hover{
+      //height: 4em;
+    }
+  }
+}
+@media (max-width: 786px) {
+  .tech-element {
+    margin-left: 1rem;
+  }
+}

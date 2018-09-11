@@ -1,0 +1,180 @@
+.postNav {
+  width: 100%;
+  position: relative;
+  top: 0.5em;
+  margin-bottom: 1em;
+  text-align: center;
+  background-color: $extraDarkGrey;
+  color: $lightGreen;
+  border-radius: 15px;
+  padding: 0.25em;
+
+  a {
+    color: $lightBlue;
+    &:hover {
+      color: $midBlue;
+    }
+  }
+
+  .fa-home {
+    margin-right: 0.4em;
+  }
+
+  .postNav-home {
+    display: block;
+    clear: left;
+  }
+
+  .postNav-date {
+    display: block;
+    clear: left;
+  }
+
+  .postNav-author {
+    display: block;
+    clear: left;
+  }
+
+  .postNav-category {
+    display: block;
+  }
+}
+
+.postPreview {
+  margin: 2em 0;
+  padding: 0;
+  border-radius: 15px;
+  a {
+    color: $lightBlue;
+  }
+
+  p {
+    color: $lightGreen;
+  }
+
+  h4,
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: $lightBlue;
+
+    padding: 0.5em 0.5em 0.5em 0;
+    margin: auto;
+    flex-basis: 25%;
+  }
+  .postInfo {
+    padding: 0.5em;
+    margin: auto;
+    margin-bottom: 1em;
+    flex-basis: 15%;
+  }
+  .postExcerpt {
+    padding: 0 0.5em 0.5em 0.5em;
+    margin: auto;
+    flex-basis: 50%;
+    p {
+      color: $offWhite;
+    }
+    u {
+      color: $lightBlue;
+    }
+  }
+}
+
+.postContent,
+.post-text-content {
+  padding: 1rem;
+  border-radius: 15px;
+  p, ul, ol {
+    padding: 0.75em;
+  }
+  ul, ol {
+    margin-left: 6rem;
+    li {
+      color: $black;
+      margin: .5rem 0;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.container {
+  .postContent {
+    background-color: $midGrey;
+    p {
+      color: $black;
+    }
+  }
+  .float-text-container {
+    .post-text-content {
+      background-color: $midGrey;
+      border-radius: 15px;
+      p {
+        color: $black;
+      }
+    }
+  }
+}
+
+@media (min-width: 786px) {
+  .postPreview {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .postNav {
+    display: flex;
+    top: -1em;
+    * {
+      color: $lightBlue;
+    }
+
+    .postNav-home {
+      flex: 1;
+      flex-basis: 15%;
+      margin: auto;
+    }
+
+    .postNav-date {
+      flex: 2;
+      flex-basis: 15%;
+      margin: auto;
+    }
+
+    .postNav-author {
+      flex: 3;
+      flex-basis: 15%;
+      margin: auto;
+    }
+
+    .postNav-category {
+      flex: 4;
+      flex-basis: 50%;
+      margin: auto;
+    }
+  }
+
+  .container {
+    .float-text-container {
+      .post-text-content {
+        margin: auto 2em;
+        display: block;
+      }
+    }
+  }
+}
+
+@media (max-width: 786px) {
+  .postContent,
+  .post-text-content {
+    ul, ol {
+      margin-left: 3rem;
+      li {
+        color: $black;
+        margin: .25rem 0;
+      }
+    }
+  }
+}

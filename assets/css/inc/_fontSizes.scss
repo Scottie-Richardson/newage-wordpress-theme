@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+* {
+  font-family: 'Ubuntu', sans-serif;
+  color: $lightBlue;
+  font-weight: bold;
+
+  h1   {font-size: 5.000rem;}
+  h2   {font-size: 4.333rem;}
+  h3   {font-size: 3.666rem;}
+  h4   {font-size: 2.999rem;}
+  h5   {font-size: 2.332rem;}
+  h6   {font-size: 1.665rem;}
+  p    {font-size: 1.000rem;}
+  a    {font-size: 1.000rem;}
+  .fab {font-size: 3.000rem;}
+}
+
+@media (max-width: 400px) {
+  * {
+    h1 {font-size: 4.000rem;}
+    h2 {font-size: 3.467rem;}
+    h3 {font-size: 2.933rem;}
+    h4 {font-size: 2.399rem;}
+    h5 {font-size: 1.865rem;}
+    h6 {font-size: 1.333rem;}
+  }
+}
+
+@media (min-width: 1000px) {
+  * {
+    p, a, ul > li {font-size: 1.5rem;}
+  }
+}

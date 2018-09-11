@@ -1,0 +1,60 @@
+$offWhite: rgb(245, 245, 245);
+$lightGray: rgb(200, 200, 200);
+$midGrey: rgb(150, 150, 150);
+$darkGrey: rgb(100, 100, 100);
+$extraDarkGrey: rgb(50, 50, 50);
+$lightBlue: rgb(0, 175, 200);
+$midBlue: rgb(0, 125, 150);
+$darkBlue: rgb(0, 75, 100);
+$lightGreen: rgb(0, 200, 50);
+$midGreen: rgb(0, 150, 0);
+$darkGreen: rgb(0, 100, 0);
+$black: rgb(0, 0, 0);
+$transparent: rgba(255, 255, 255, 0.01);
+$transparentOffWhite: rgba(240, 240, 240, 0.5);
+$transparentWhite: rgba(255, 255, 255, 0.039);
+$transparentBlue: rgba(0, 175, 200, 0.5);
+
+.offwhite {
+  color: $offWhite;
+}
+
+.lightGray {
+  color: $lightGray;
+}
+
+.midGrey {
+  color: $midGrey;
+}
+
+.darkGrey {
+  color: $darkGrey;
+}
+
+.lightBlue {
+  color: $lightBlue;
+}
+
+.midBlue {
+  color: $midBlue;
+}
+
+.darkBlue {
+  color: $darkBlue;
+}
+
+.lightGreen {
+  color: $lightGreen;
+}
+
+.midGreen {
+  color: $midGreen;
+}
+
+.darkGreen {
+  color: $darkGreen;
+}
+
+.black {
+  color: $black;
+}

@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  color: $offWhite;
+  transition: 0.3s;
+  &:hover {
+    color: $midGrey;
+    transition: 0.3s;
+  }
+}
+
+body {
+  background-color: $black;
+  color: $offWhite;
+  font-weight: bold;
+}
+
+.border-glow-bottom {
+  box-shadow: 0px 1px $transparentWhite, 0px 3px $transparentWhite,
+    0px 5px $transparentWhite, 0px 7px $transparentWhite,
+    0px 9px $transparentWhite, 0px 11px $transparentWhite,
+    0px 13px $transparentWhite, 0px 15px $transparentWhite;
+}
+
+.border-glow-around-blue {
+  box-shadow: 0px 0px 30px 5px $transparentBlue;
+}
+
+.border-glow-around {
+  box-shadow: 0px 0px 30px 5px $transparentOffWhite;
+}
+
+.container {
+  position: relative;
+  top: 3em;
+  width: 95%;
+  padding: 0;
+  margin: 1em auto;
+}
+
+.centered {
+  width: 95%;
+  padding: 0;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.form-container {
+  font-weight: normal;
+  position: relative;
+  top: 3em;
+  border: 1px solid $offWhite;
+  border-radius: 5px;
+  width: 66.66%;
+  padding: 1em;
+  margin: 1em auto;
+
+  h3 {
+    display: none;
+  }
+
+  nf-field
+    > .nf-field-container.submit-container.label-above.textbox-container
+    > .nf-field
+    > .field-wrap.submit-wrap.textbox-wrap
+    > .nf-field-element
+    > .ninja-forms-field.nf-element {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: $darkBlue;
+    color: $offWhite;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 1rem auto;
+    box-shadow: 5px 5px 10px $transparentOffWhite;
+  }
+}
+
+.float-text-container {
+  margin: 1em;
+  padding: 1em 0;
+}
+
+.featured-image-display {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  img {
+    max-width: 480px;
+    max-height: 650px;
+    min-width: 288px;
+    min-height: 390px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    margin: 0 auto 1em auto;
+  }
+}
+
+.content-hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  .jumbo {
+    &:hover {
+      color: $offWhite;
+      opacity: 0.6;
+    }
+    position: relative;
+    margin: 6rem auto 0 auto;
+    padding: 1rem;
+    width: 80%;
+    background-color: $midGreen;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: ease-in-out 0.3s;
+    h6 {
+      text-align: center;
+      color: $offWhite;
+    }
+  }
+}
+
+.small-margin {
+  margin: 1rem auto !important;
+}
