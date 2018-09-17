@@ -13,9 +13,6 @@ pageBanner(array(
 
         <div class="postInfo">
           <p>
-            Posted by:<br>
-            <em><u><?php the_author_posts_link(); ?></u></em>
-            <br><br><br>
             Categories:<br>
             <em><u><?php echo get_the_category_list('</u> & <br><u>'); ?></u></em></p>
         </div>

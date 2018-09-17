@@ -682,6 +682,7 @@ body.login {
 
 .container .postContent p {
   color: black;
+  text-indent: 2.5rem;
 }
 
 .container .float-text-container .post-text-content {
@@ -691,6 +692,7 @@ body.login {
 
 .container .float-text-container .post-text-content p {
   color: black;
+  text-indent: 2.5rem;
 }
 
 @media (min-width: 786px) {

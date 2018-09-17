@@ -7,7 +7,6 @@ while (have_posts()) {
     <div class="postNav">
       <div class="postNav-home"><a href="<?php echo site_url('/blog'); ?>"><i class="fa fa-home"></i>Blog Home</a></div>
       <div class="postNav-date"><p>Posted on <?php the_time('n/j/Y'); ?></p></div>
-      <div class="postNav-author"><p>By: <?php the_author_posts_link(); ?></p></div>
       <div class="postNav-category"><p>Categories: <?php echo get_the_category_list(' & '); ?></p></div>
     </div>
   </div>

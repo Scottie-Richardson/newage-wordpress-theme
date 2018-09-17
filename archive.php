@@ -8,20 +8,17 @@ pageBanner(array(
     while(have_posts()) {
       the_post(); ?>
       <div class="postPreview border-glow-around">
-        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+        <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
 
         <div class="postInfo">
           <p>
-            Posted by<br>
-            <em><u><?php the_author_posts_link(); ?></u></em>
-            <br><br><br>
             Categories:<br>
             <em><u><?php echo get_the_category_list('</u> & <br><u>'); ?></u></em></p>
         </div>
 
         <div class="postExcerpt">
           <?php the_excerpt(); ?>
-          <p><a href="<?php the_permalink(); ?>"><em><u>Continue reading &raquo;</u></em></a></p>
+          <a href="<?php the_permalink(); ?>"><em><u>Continue reading &raquo;</u></em></a>
         </div>
       </div>
     <?php }
